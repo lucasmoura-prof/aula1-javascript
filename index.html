@@ -116,8 +116,13 @@
                     rua: "Rua Vinte e Quatro",
                     numero: 123,
                     referencias: ["Perto da antena", "Do lado da loja X"]
+                },
+                display: function ()  {
+                    console.log("Oi");
                 }
             };
+
+            person.display();
             
             person.nome = "Maria da Silva Ferreira Cunha Alguma Coisa";
             
@@ -133,7 +138,92 @@
             console.log(person["endereco"].referencias[1]);
             
             // Funções
+            // Função que não retorna um valor (procedure/procedimento)
+            function printMessage() {
+                console.log("Minha mensagem");
+            }
 
+            // Função que retorna um valor
+            function calculate(n1, n2) {
+                return n1 * n2;
+            }
+
+            printMessage();
+            var resultado = calculate(5, 10);
+            console.log(resultado);
+            
+            // Criando funções como variáveis
+            var printMessage2 = function (message) {
+                console.log("Texto: " + message);
+            };
+
+            var calculate2 = function (n1, n2) {
+                printMessage2("olá, tudo bem?");
+                var color = "azul";
+                return n1 / n2;
+            };
+
+            console.log(calculate2(5, 10));
+
+            /* Cria uma função que recebe um valor (mensagem) como parâmetro,
+                e uma função responsável por imprimir uma mensagem
+            */
+            var print = function (value, printFunction, user) {
+                printFunction(value);
+                console.log(user);
+                user.display();
+            }
+
+            print("Alohomora", printMessage2, person);
+
+            /*
+                count++; // count = count + 1;
+                count--; // count = count - 1;
+                count += 5; // count = count + 5;
+                count -= 10; // count = count - 10;
+                count *= 100; // count = count * 100;
+                count /= 5; // count = count / 5;
+            */
+            
+            var array = [1, 2, 3, 47, 90, -1];
+            var count = 0;
+            while(count <= 2) {
+                console.log(count);
+                count++; // count = count + 1;
+            }
+
+            var count2 = 0;
+            // Vai executar pelo menos uma vez se a condição de parada for false
+            do {
+                console.log("Count2 = " + count2);
+                count2++; // count = count + 1;
+            } while (count2 <= 2);
+
+            /*
+            var i = 0;
+            while (i < 4) {
+                console.log("i = " + i);
+                i++;
+            }
+            */
+            for (var i = 0; i < 4; i++) {
+                console.log("i = " + i);
+            }
+
+            console.log("For decrescente");
+            for (var i = 50; i >= 20; i -= 10) { // i = i - 10
+                console.log("i = " + i);
+            }
+
+            var linha = 1;
+            // variavel++ -> primeiro usa o valor da variável e só depois faz o acrescimo
+            console.log("Linha = ", linha++);
+            console.log("Linha após = ", linha);
+
+            // ++variavel -> primeiro faz o acréscimo e só depois usa a variável
+            var coluna = 1;
+            console.log("Coluna = ", ++coluna);
+            console.log("Coluna após = ", coluna);
         </script>
     </body>
 </html>
