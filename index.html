@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <!-- Corrigir problemas de formatação !-->
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            // Declaração de variáveis
+            var number = 5;
+            var floatNumber = 6.9;
+            var name = "João 2";
+            var name2 = 'My name';
+            var canShow = false;
+
+            // Criar arrays
+            var array = [1, 2, 3, 4, 5];
+            var array2 = ["A", "B", "C"];
+            var array3 = [1, "B", 5.6, false];
+
+            var arrayMulti = [
+                [1, 2],
+                [3, 4, 3],
+                [5, 6]
+            ];
+
+
+            // Imprimindo variáveis
+            console.log("Hello 'world'");
+
+            console.log(number);
+            console.log('"Number" = ' + number);
+            console.log('Name', name);
+            console.log(number, floatNumber, name, canShow);
+
+            console.log(array);
+            console.log(array2);
+            console.log(array3);
+            console.log(arrayMulti);
+
+            console.log(array.length);
+            console.log(arrayMulti[0].length);
+
+            // Operações aritméticas
+            var n1 = 5;
+            var n2 = 10;
+            var r1 = n1 + n2;
+            var r2 = n2 - n1;
+            var r3 = n1 * n2;
+            var r4 = n2 / n1;
+            var r5 = n2 % n1; // Resto
+            var resultado = "10" - 5;
+
+            console.log(r1, r2, r3, r4, r5);
+            console.log("Resultado = " + resultado);
+
+            // Condições
+            var age = 15;
+            if (age == 15) {
+                console.log("Idade é 15");
+            }
+
+            var id = "10";
+            // Com === verifica se a tipagem é igual e se os valores são iguais
+            if (id === 10) {
+                console.log("Id é 10");
+            }
+
+            // Com !== vrifica se a tipagem é difernt e se os valores também são diferentes
+            if (id !== 10) {
+                console.log("Idade é diferente de 10");
+            }
+
+            // Id maior ou igual a 10 E Id menor ou igual a 20 OU idade igual a 1
+            if (id >= 10 && id <= 20 || age === 1) {
+                console.log("Id entre 10 e 20");
+            }
+
+            //
+            var myVar = false;
+            var potato; // undefined
+            var var2 = null;
+            var var3 = false;
+            var pudim = 0;
+            console.log(potato);
+            console.log(var2);
+            if (pudim && potato) {
+                console.log("Verdade");
+            } else if (!var3) { // var3 === false
+                console.log("Falso");
+            } else {
+                console.log("Outro caso");
+            }
+
+            //
+            var name = "João";
+            var text = (name === "João") ? "João & Maria" : "Não tem João";
+
+            if (name === "João") {
+                text = "João & Maria";
+            } else {
+                text = "Não tem João";
+            }
+
+            console.log(text);
+            
+            var n1 = 5;
+            var result = (n1 >= 10) ? 10 : 0;
+            console.log(result);
+
+            // Objeto
+            // Funções
+        </script>
+    </body>
+</html>
